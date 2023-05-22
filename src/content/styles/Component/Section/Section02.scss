@@ -1,0 +1,102 @@
+@import "../../Base/Global.scss";
+@import "../../Base/Colour.scss";
+
+/* Common xs1, xs2 */
+@media all and (max-width: #{($mq-sm1 - 1) + "px"}) {
+    .section-01 {
+        .c-wrapper {
+        }
+    }
+}
+
+/* Common sm1, sm2 tablet */
+@media all and (min-width: #{($mq-sm1) + "px"}) and (max-width: #{($mq-md - 1) + "px"}) {
+    .section-01 {
+        .c-wrapper {
+        }
+    }
+}
+
+@media all and (min-width: #{$mq-md + "px"}) {
+    .light {
+        .section-02 {
+            padding: 20px;
+            .basket {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 20px;
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 150px;
+                    align-items: center;
+                    color: black;
+                    font-size: 20px;
+                    font-weight: 700;
+                    button {
+                        color: rgb(29, 155, 240);
+                        background: white;
+                        width: 20px;
+                        height: 20px;
+                        svg{
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                    span {
+                        color: black;
+                        font-weight: 900;
+                        font-size: 30px;
+                    }
+                }
+            }
+            .basket-total {
+                margin-top: 40px;
+                display: flex;
+                justify-content: end;
+                width: 80%;
+            }
+        }
+    }
+    .dark {
+        .section-02 {
+            padding: 20px;
+            .basket {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 20px;
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 150px;
+                    align-items: center;
+                    color: whitesmoke;
+                    font-size: 20px;
+                    font-weight: 700;
+                    button {
+                        background: lightcoral;
+                        width: 20px;
+                        height: 20px;
+                        svg {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                    span {
+                        color: whitesmoke;
+                        font-weight: 900;
+                        font-size: 30px;
+                    }
+                }
+            }
+            .basket-total {
+                margin-top: 40px;
+                display: flex;
+                justify-content: end;
+                width: 80%;
+            }
+        }
+    }
+}

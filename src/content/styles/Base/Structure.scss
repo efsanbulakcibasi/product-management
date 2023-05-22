@@ -1,0 +1,376 @@
+@import "Global.scss";
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background-color: #f0f0f0;
+}
+
+.c-wrapper {
+  margin: 0 auto;
+}
+
+/* Common xs1, xs2 mobil*/
+@media all and (max-width: #{($mq-sm1 - 1) + "px"}) {
+  .c-wrapper {
+    width: $c-wrapper-xs;
+  }
+}
+
+/* Common sm1, sm2 tablet */
+@media all and (min-width: #{($mq-sm1) + "px"}) and (max-width: #{($mq-md - 1) + "px"}) {
+  .c-wrapper {
+    width: $c-wrapper-sm;
+  }
+}
+
+@media all and (min-width: #{$mq-md + "px"}) {
+  .c-wrapper {
+    width: $c-wrapper-md;
+  }
+}
+
+.line-x {
+  background-color: black;
+  width: 100%;
+  height: 4px;
+}
+.line-y {
+  background-color: black;
+  width: 5px;
+}
+
+button {
+  cursor: pointer;
+}
+.light {
+  .modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+
+    .modal-content {
+      z-index: 2;
+      min-width: 50%;
+      min-height: 50%;
+      overflow-y: auto;
+      overflow-x: hidden;
+      background-color: white;
+      border: 2px solid black;
+      border-radius: 32px;
+      padding: 48px;
+
+      .modal-header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 28px;
+        a {
+          color: black;
+          font-size: 25px;
+          margin-bottom: 5px;
+          font-weight: 700;
+        }
+      }
+
+      .modal-body {
+        background-color: rgb(29, 155, 240);
+        border: 3px solid black;
+        border-radius: 16px;
+        padding: 30px;
+        .form-edit-ctg {
+          div {
+            label {
+              font-weight: 700;
+            }
+            input {
+              border: 2px solid black;
+              border-radius: 16px;
+              padding: 1px;
+              margin-left: 5px;
+            }
+          }
+          .button-save {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            gap: 20px;
+            button {
+              color: black;
+              background-color: rgb(29, 155, 240);
+              border: 3px solid whitesmoke;
+              border-radius: 16px;
+              font-weight: 700;
+              padding: 5px;
+            }
+          }
+        }
+        .form-edit-prdct {
+          .ctg-select {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            label {
+            }
+            select {
+              appearance: none;
+              color: black;
+              font-weight: 900;
+              background-color: transparent;
+              border: none;
+              padding: 0 1em 0 0;
+              margin: 0;
+              width: 100%;
+              font-family: inherit;
+              font-size: inherit;
+              cursor: pointer;
+              line-height: inherit;
+            }
+          }
+          div {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            label {
+              color: whitesmoke;
+              font-weight: 700;
+            }
+
+            input {
+              border: 3px solid black;
+              border-radius: 16px;
+              padding: 3px;
+            }
+            textarea {
+              border: 3px solid black;
+              border-radius: 4px;
+              padding: 3px;
+            }
+            a {
+              color: black;
+              font-weight: 900;
+            }
+            button {
+              border: 5px solid whitesmoke;
+              padding: 2px 6px;
+              border-radius: 8px;
+              color: black;
+              font-weight: 900;
+            }
+            .form-img-container {
+            }
+          }
+        }
+        .delete-modal {
+          h3 ,h5 , p{
+            color: black;
+            font-size: 20px;
+            font-weight: 900;
+            margin-bottom: 30px;
+          }
+          .removeButtons {
+            display: flex;
+            justify-content: end;
+            gap: 20px;
+            button {
+              width: 69px ;
+              color: black;
+              background-color: whitesmoke;
+              border: 4px solid black;
+              border-radius: 6px;
+              font-weight: 900;
+              padding: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.dark {
+  .modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+
+    .modal-content {
+      z-index: 2;
+      min-width: 50%;
+      min-height: 50%;
+      overflow-y: auto;
+      overflow-x: hidden;
+      background-color: white;
+      border: 2px solid black;
+      border-radius: 32px;
+      padding: 48px;
+
+      .modal-header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 28px;
+        a {
+          color: lightcoral;
+          font-size: 28px;
+          font-weight: 900;
+        }
+      }
+
+      .modal-body {
+        background-color: #4b6684;
+        border: 3px solid black;
+        border-radius: 16px;
+        padding: 30px;
+        .form-edit-ctg {
+          div {
+            label {
+              font-weight: 700;
+            }
+            input {
+              border: 2px solid black;
+              border-radius: 16px;
+              padding: 1px;
+              margin-left: 5px;
+            }
+          }
+          .button-save {
+            margin-top: 20px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            gap: 20px;
+            button {
+              color: black;
+              background-color: lightcoral;
+              border: 4px solid whitesmoke;
+              border-radius: 6px;
+              font-weight: 900;
+              padding: 4px;
+            }
+          }
+        }
+        .form-edit-prdct {
+          .ctg-select {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            label {
+            }
+            select {
+              appearance: none;
+              color: black;
+              font-weight: 900;
+              background-color: transparent;
+              border: none;
+              padding: 0 1em 0 0;
+              margin: 0;
+              width: 100%;
+              font-family: inherit;
+              font-size: inherit;
+              cursor: pointer;
+              line-height: inherit;
+            }
+          }
+          div {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            label {
+              color: whitesmoke;
+              font-weight: 700;
+            }
+
+            input {
+              border: 3px solid black;
+              border-radius: 16px;
+              padding: 3px;
+            }
+            textarea {
+              border: 3px solid black;
+              border-radius: 4px;
+              padding: 3px;
+            }
+            a {
+              color: black;
+              font-weight: 900;
+            }
+            button {
+              color: black;
+              background-color: lightcoral;
+              border: 4px solid whitesmoke;
+              border-radius: 6px;
+              font-weight: 900;
+              padding: 4px;
+            }
+          }
+        }
+        .delete-modal {
+          h3 ,h5 , p{
+            color: whitesmoke;
+            font-size: 20px;
+            font-weight: 900;
+            margin-bottom: 30px;
+          }
+          .removeButtons {
+            display: flex;
+            justify-content: end;
+            gap: 20px;
+            button {
+              width: 69px ;
+              color: black;
+              background-color: lightcoral;
+              border: 4px solid whitesmoke;
+              border-radius: 6px;
+              font-weight: 900;
+              padding: 4px;
+            }
+          }
+        }
+      }
+
+      .body {
+      }
+    }
+  }
+}
+
+.error {
+  > * {
+    color: red;
+  }
+
+  input {
+    border: 1px solid red;
+  }
+}

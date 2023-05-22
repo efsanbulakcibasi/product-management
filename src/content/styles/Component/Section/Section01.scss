@@ -1,0 +1,384 @@
+﻿@import "../../Base/Global.scss";
+@import "../../Base/Colour.scss";
+
+/* Common xs1, xs2 */
+@media all and (max-width: #{($mq-sm1 - 1) + "px"}) {
+    .section-01 {
+        .c-wrapper {
+        }
+    }
+}
+
+/* Common sm1, sm2 tablet */
+@media all and (min-width: #{($mq-sm1) + "px"}) and (max-width: #{($mq-md - 1) + "px"}) {
+    .section-01 {
+        .c-wrapper {
+        }
+    }
+}
+
+@media all and (min-width: #{$mq-md + "px"}) {
+    .light {
+        .seciton-01 {
+            background-color: white;
+            .contents {
+                display: flex;
+                min-height: 850px;
+                .a-side {
+                    width: 20%;
+                    background-color: rgb(29, 155, 240);
+                    padding: 30px;
+                    .a-side-01 {
+                        .a-side-01-A {
+                            display: grid;
+                            gap: 30px;
+                            li {
+                                a {
+                                    color: black;
+                                    font-weight: 900;
+                                    font-size: 30px;
+                                    cursor: pointer;
+                                }
+                                :hover {
+                                    color: whitesmoke;
+                                    transition: 0.5s;
+                                    font-size: 40px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .outlet {
+                    width: 100%;
+                    padding: 30px;
+                    background-color: white;
+                    .product-list-header {
+                        > .list-header {
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            h1 {
+                                color: black;
+                                font-weight: 900;
+                            }
+                            .right-side {
+                                width: 200px;
+                                display: flex;
+                                justify-content: space-around;
+                                align-items: center;
+                                select {
+                                    appearance: none;
+                                    color: rgb(29, 155, 240);
+                                    font-weight: 900;
+                                    background-color: transparent;
+                                    border: none;
+                                    padding: 0 1em 0 0;
+                                    margin: 0;
+                                    width: 100%;
+                                    font-family: inherit;
+                                    font-size: inherit;
+                                    cursor: pointer;
+                                    line-height: inherit;
+                                }
+                                a {
+                                    padding: 2px 6px;
+                                    border-radius: 8px;
+                                    color: rgb(29, 155, 240);
+                                    font-weight: 900;
+                                }
+                            }
+                        }
+                        .list {
+                            > .list-01 {
+                                display: flex;
+                                justify-content: space-around;
+                                align-items: center;
+                                margin-top: 40px;
+                                li {
+                                    width: 100px;
+                                    font-size: 18px;
+                                    color: black;
+                                    font-weight: 900;
+                                    text-align: center;
+                                }
+                                .img-container {
+                                    display: flex;
+                                    gap: 5px;
+                                    img {
+                                        width: 60px;
+                                        height: 60px;
+                                        object-fit: cover;
+                                    }
+                                    :hover {
+                                        transition: 0.3s;
+                                        width: 100px;
+                                        height: 100px;
+                                    }
+                                }
+                                .action-buttons {
+                                    display: flex;
+                                    justify-content: space-around;
+                                    align-items: end;
+                                    a {
+                                        svg {
+                                            color: rgb(29, 155, 240);
+                                            width: 20px;
+                                            height: 20px;
+                                        }
+                                    }
+                                }
+                            }
+                            .not-result {
+                                font-size: 15px;
+                                color: black;
+                                font-weight: 900;
+                                a {
+                                    color: rgb(29, 155, 240);
+                                    font-weight: 900;
+                                    font-size: 17px;
+                                }
+                            }
+                        }
+                    }
+                    .category-list-header {
+                        > .list-header {
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            h1 {
+                            }
+                            a {
+                                cursor: pointer;
+                                border: 5px solid white;
+                                padding: 2px 6px;
+                                border-radius: 8px;
+                                color: rgb(29, 155, 240);
+                                font-weight: 900;
+                            }
+                        }
+                        > .list {
+                            .header {
+                                display: flex;
+                                justify-content: space-around;
+                                align-items: center;
+                                margin-top: 40px;
+                                li {
+                                    width: 136px;
+                                    font-size: 18px;
+                                    color: black;
+                                    font-weight: 900;
+                                    text-align: center;
+                                }
+                                .flex-1 {
+                                    a {
+                                        color: rgb(29, 155, 240);
+                                    }
+                                }
+                                .action-buttons {
+                                    display: flex;
+                                    justify-content: space-around;
+                                    align-items: center;
+                                    a {
+                                        svg {
+                                            color: rgb(29, 155, 240);
+                                            width: 20px;
+                                            height: 20px;
+                                        }
+                                    }
+                                }
+                            }
+                            .undefined-text {
+                                p {
+                                    a {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .dark {
+        .seciton-01 {
+            .contents {
+                display: flex;
+                min-height: 850px;
+                .a-side {
+                    width: 20%;
+                    background-color: #4b6684;
+                    padding: 30px;
+                    .a-side-01 {
+                        .a-side-01-A {
+                            display: grid;
+                            gap: 30px;
+                            li {
+                                a {
+                                    color: whitesmoke;
+                                    font-weight: 900;
+                                    font-size: 30px;
+                                    cursor: pointer;
+                                }
+                                :hover {
+                                    color: lightcoral;
+                                    transition: 0.5s;
+                                    font-size: 40px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .outlet {
+                    width: 100%;
+                    padding: 30px;
+                    background-color: lightcoral;
+                    .product-list-header {
+                        > .list-header {
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            h1 {
+                                color: black;
+                                font-weight: 900;
+                            }
+                            .right-side {
+                                width: 200px;
+                                display: flex;
+                                justify-content: space-around;
+                                align-items: center;
+                                select {
+                                    appearance: none;
+                                    color: black;
+                                    font-weight: 900;
+                                    background-color: transparent;
+                                    border: none;
+                                    padding: 0 1em 0 0;
+                                    margin: 0;
+                                    width: 100%;
+                                    font-family: inherit;
+                                    font-size: inherit;
+                                    cursor: pointer;
+                                    line-height: inherit;
+                                }
+                                a {
+                                    border: 5px solid whitesmoke;
+                                    padding: 2px 6px;
+                                    border-radius: 8px;
+                                    color: black;
+                                    font-weight: 900;
+                                }
+                            }
+                        }
+                        .list {
+                            > .list-01 {
+                                display: flex;
+                                justify-content: space-around;
+                                align-items: center;
+                                margin-top: 40px;
+                                li {
+                                    width: 100px;
+                                    font-size: 18px;
+                                    color: whitesmoke;
+                                    font-weight: 900;
+                                    text-align: center;
+                                }
+                                .img-container {
+                                    display: flex;
+                                    gap: 5px;
+                                    img {
+                                        width: 60px;
+                                        height: 60px;
+                                        object-fit: cover;
+                                    }
+                                    :hover {
+                                        transition: 0.3s;
+                                        width: 100px;
+                                        height: 100px;
+                                    }
+                                }
+                                .action-buttons {
+                                    display: flex;
+                                    justify-content: space-around;
+                                    align-items: end;
+                                    a {
+                                        svg {
+                                            color: black;
+                                            width: 20px;
+                                            height: 20px;
+                                        }
+                                    }
+                                }
+                            }
+                            .not-result {
+                                font-size: 15px;
+                                color: black;
+                                font-weight: 900;
+                                a {
+                                    color: black;
+                                    font-weight: 900;
+                                    font-size: 17px;
+                                }
+                            }
+                        }
+                    }
+                    .category-list-header {
+                        > .list-header {
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            h1 {
+                                color: black;
+                            }
+                            a {
+                                cursor: pointer;
+                                border: 5px solid white;
+                                padding: 2px 6px;
+                                border-radius: 8px;
+                                color: black;
+                                font-weight: 900;
+                            }
+                        }
+                        > .list {
+                            .header {
+                                display: flex;
+                                justify-content: space-around;
+                                align-items: center;
+                                margin-top: 40px;
+                                li {
+                                    width: 136px;
+                                    font-size: 18px;
+                                    color: whitesmoke;
+                                    font-weight: 900;
+                                    text-align: center;
+                                }
+                                .flex-1 {
+                                    a {
+                                        color: black;
+                                    }
+                                }
+                                .action-buttons {
+                                    display: flex;
+                                    justify-content: space-around;
+                                    align-items: center;
+                                    a {
+                                        svg {
+                                            color: black;
+                                            width: 20px;
+                                            height: 20px;
+                                        }
+                                    }
+                                }
+                            }
+                            .undefined-text {
+                                p {
+                                    a {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
